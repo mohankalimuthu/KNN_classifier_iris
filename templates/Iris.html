@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris</title>
+</head>
+<body>
+<h1>KNN Model Deployment</h1>
+<form action="/predict" method="post">
+    <label>Feature 1:</label>
+    <input type="text" name="f1"><br><br>
+
+    <label>Feature 2:</label>
+    <input type="text" name="f2"><br><br>
+
+    <label>Feature 3:</label>
+    <input type="text" name="f3"><br><br>
+
+    <label>Feature 4:</label>
+    <input type="text" name="f4"><br><br>
+
+    <button type="submit">predict</button>
+</form>
+
+{% if result %}
+        <h2>Prediction: {{ result }}</h2>
+    {% endif %}
+
+
+</body>
+</html>
